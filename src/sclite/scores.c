@@ -1197,8 +1197,8 @@ void print_system_summary(SCORES *sc, char *sys_root_name, int do_sm, int do_raw
     Zpct_fmt = "%5.0f*";
     tot_Zpct_fmt = "%5.1f+";
     if (!do_raw){
-	pct_fmt = tot_pct_fmt = "%5.1f ";
-	prec = tprec = 1;
+	pct_fmt = tot_pct_fmt = "%5.2f ";
+	prec = tprec = 2;
     } else {
 	pct_fmt="%5.0f ";    	prec = 0;
 	tot_pct_fmt="%5.1f ";  tprec = 1;
